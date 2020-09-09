@@ -1,6 +1,6 @@
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = "https://example.nl", // @TODO: Proper Netlify URL
+  URL: NETLIFY_SITE_URL = "https://groningengriffins.nl", // @TODO: Proper Netlify URL
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env
@@ -9,9 +9,9 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
   siteMetadata: {
-    title: `@TODO: Title`,
+    title: `Groningen Griffins`,
     siteUrl,
-    description: `@TODO: Description`,
+    description: `The Groningen Griffins are the quidditch team of Groningen. If you're looking for a high-intensity full-contact sport with a friendly and cooperative environment, quidditch is likely the sport for you.`,
     author: `Sander Geraedts`,
   },
   plugins: [
@@ -58,22 +58,14 @@ module.exports = {
         background_color: `#20232a`,
         theme_color: `#20232a`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // @TODO: Favicon
+        icon: `src/images/favicon.svg`,
       },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [``], // @TODO: Fonts
+        fonts: [`Staatliches`, `Lato\:400,700`],
         display: "swap",
-      },
-    },
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /images/,
-        },
       },
     },
     {

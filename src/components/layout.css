@@ -1,8 +1,16 @@
 html {
+  font-family: "Lato", sans-serif;
 }
 body {
   margin: 0;
   font-size: 18px;
+}
+
+a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
 }
 
 h1,
@@ -11,7 +19,67 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Staatliches", serif;
   margin: 0;
+}
+
+h1 {
+  font-size: 72px;
+}
+h2 {
+  font-size: 54px;
+}
+h3 {
+  font-size: 42.12px;
+}
+h4 {
+  font-size: 36px;
+}
+h5 {
+  font-size: 29.88px;
+}
+h6 {
+  font-size: 24.12px;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 28.08px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 19.92px;
+  }
+  h6 {
+    font-size: 16.08px;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  h3 {
+    font-size: 21.06px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 14.94px;
+  }
+  h6 {
+    font-size: 12.06px;
+  }
 }
 
 blockquote {
